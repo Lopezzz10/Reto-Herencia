@@ -4,6 +4,7 @@ public class Padre {
 	private int defectos;
 	private int virtudes;
 	private double totalAhorrado;
+	private String nombre;
 	
 //	@Override
 //	public String toString() {
@@ -14,8 +15,8 @@ public class Padre {
 //		System.out.println("Soy el constructor vacio del padre");
 //	}
 	
-	
-	public Padre(int virtudes, int defectos) {
+	public Padre(String nombre, int virtudes, int defectos) {
+		this.nombre = nombre;
 		this.defectos = defectos;
 		this.virtudes =  virtudes;
 	}
@@ -32,15 +33,18 @@ public class Padre {
 	public void setVirtudes(int virtudes) {
 		this.virtudes = virtudes;
 	}
-	
 	public double getTotalAhorrado() {
 		return totalAhorrado;
 	}
-
 	public void setTotalAhorrado(double totalAhorrado) {
 		this.totalAhorrado = totalAhorrado;
 	}
-
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
 	public void imprimir() {
 		System.out.println("virtudes:"+ virtudes);
 		System.out.println("defectos:"+ defectos);
@@ -51,10 +55,10 @@ public class Padre {
 	
 	@Override //Ayuda a revisar que el metodo esta bien al momento de sobreescribir
 	public String toString() {
-		return "Defectos: " + defectos + " Virtudes: " + virtudes + " Total Ahorrado del padre: " + totalAhorrado;
+		return "Nombre: " + nombre + " Defectos: " + defectos + " Virtudes: " + virtudes + " TotalAhorrado: " + totalAhorrado;
 	}
 	
-	public void ahorrar(double monto){
+	public void ahorrar(double monto) {
 		totalAhorrado += monto;
 	}
 }

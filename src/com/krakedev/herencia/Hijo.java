@@ -1,11 +1,11 @@
 package com.krakedev.herencia;
 
 public class Hijo extends Padre {
-	
+
 	private int juguetes;
-	
-	public Hijo (int virtudes,int defectos,int juguetes) {
-		super(virtudes,defectos);
+
+	public Hijo(String nombre, int virtudes, int defectos, int juguetes) {
+		super(nombre, virtudes, defectos);
 		this.juguetes = juguetes;
 	}
 
@@ -13,10 +13,10 @@ public class Hijo extends Padre {
 	public void ahorrar(double monto) {
 		setTotalAhorrado(getTotalAhorrado()+monto*0.5);
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Defectos: " + getDefectos() + " Virtudes: " + getVirtudes() + " Juguetes: " + juguetes;	
+		return "Nombre: " + getNombre() + " Defectos: " + getDefectos() + " Virtudes: " + getVirtudes() + " Juguetes: " + juguetes;
 	}
 
 	public int getJuguetes() {
@@ -26,4 +26,5 @@ public class Hijo extends Padre {
 	public void setJuguetes(int juguetes) {
 		this.juguetes = juguetes;
 	}
+
 }
