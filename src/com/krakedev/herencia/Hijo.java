@@ -10,6 +10,11 @@ public class Hijo extends Padre {
 	}
 
 	@Override
+	public void ahorrar(double monto) {
+		setTotalAhorrado(getTotalAhorrado()+monto*0.5);
+	}
+	
+	@Override
 	public String toString() {
 		return "Defectos: " + getDefectos() + " Virtudes: " + getVirtudes() + " Juguetes: " + juguetes;	
 	}

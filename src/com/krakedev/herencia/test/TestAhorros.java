@@ -13,10 +13,10 @@ public class TestAhorros {
 		
 		Hija hija = new Hija(3,4);
 		hija.ahorrar(100);
-		System.out.println("Total ahorrado: "+ hija.getTotalAhorrado());
+		System.out.println("Total ahorrado de la hija: "+ hija.getTotalAhorrado());
 
 		Hijo hijo = new Hijo(5,6,7);
 		hijo.ahorrar(100);
-		System.out.println("Total ahorrado: "+ hijo.getTotalAhorrado());
+		System.out.println("Total ahorrado del hijo: "+ hijo.getTotalAhorrado());
 	}
 }

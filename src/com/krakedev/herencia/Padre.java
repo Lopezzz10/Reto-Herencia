@@ -51,7 +51,7 @@ public class Padre {
 	
 	@Override //Ayuda a revisar que el metodo esta bien al momento de sobreescribir
 	public String toString() {
-		return "Defectos: " + defectos + " Virtudes: " + virtudes + " TotalAhorrado: " + totalAhorrado;
+		return "Defectos: " + defectos + " Virtudes: " + virtudes + " Total Ahorrado del padre: " + totalAhorrado;
 	}
 	
 	public void ahorrar(double monto){
